@@ -1,8 +1,6 @@
 class User
-  attr_reader :name, :split_name
-  def initialize
-    @split_name=@name.split(' ')
-  end
+  attr_reader :name
+  @split_name=@name.split(' ')
   def first_name
     @split_name[0]
   end
