@@ -2,6 +2,7 @@ class User
   attr_reader :name
   def name=
     @name="#{@first_name} #{@last_name}"
+  end
   def first_name(name)
     @first_name=name
   end
