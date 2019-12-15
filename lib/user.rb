@@ -1,10 +1,11 @@
 class User
   attr_reader :name
-  @split_name=@name.split(' ')
-  def first_name
-    @split_name[0]
+  def name=
+    @name="#{@first_name} #{@last_name}"
+  def first_name(name)
+    @first_name=name
   end
-  def last_name
-    @split_name[1]
+  def last_name(name)
+    @last_name=name
   end
 end
